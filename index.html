@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuentra tu Pareja</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Encuentra tu Pareja</h1>
+        <div class="form-container">
+            <input type="text" id="usernameInput" placeholder="Nombre de Usuario" required>
+            <button onclick="generateLink()">Generar Enlace</button>
+            <input type="text" id="shareLinkInput" readonly>
+        </div>
+        <div id="chat" class="chat-container hidden">
+            <h2>Chat</h2>
+            <div id="chatMessages"></div>
+            <input type="text" id="messageInput" placeholder="Escribe tu mensaje">
+            <button onclick="sendMessage()">Enviar</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
